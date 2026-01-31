@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f0f14;
+  color: #f1f1f5;
+}
+
+.header {
+  padding: 16px 24px;
+  background: #1f2030;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav a {
+  color: #8bd0ff;
+  text-decoration: none;
+}
+
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: #1a1b25;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea, select, button {
+  border-radius: 8px;
+  border: 1px solid #3a3b4a;
+  padding: 10px;
+  background: #11121a;
+  color: #f1f1f5;
+}
+
+button {
+  background: #2463eb;
+  border: none;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #32344a;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .grid.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
